@@ -1,0 +1,95 @@
+BASIC HTML TIPS
+
+Every html documents starts with a !DOCTYPE tag declaration at the top of the document. E.g 
+
+<!DOCTYPE html>
+
+<html> <!-- this is your html tag description-->
+<head> </head> <!-- it is the head section of your document, which contains meta information about the document. Your browser doesnt display this part -->
+<header> <!-- this is the header of your document, it is used to wrap introductory information or navigation links, it is inside the <body> tag -->
+
+<h1> </h1> <!-- this is the first and the largest heading in your document, there must only be one <h1> tag in your document, heading tags are from h1 to h6 -->
+</header>
+
+<main> <!-- main elements helps search engine and developers find the main content of your document, there should only be one main tag in your content, it is within the body tag -->
+
+<div> <!-- the div tag is used to divide sections of the documents that are not related to each other -->
+
+<body> <!-- this is the body of your document -->
+
+<p> </p> <!-- this is a paragraph tag -->
+<br> <!-- this is a line break -->
+
+<hr> <!-- it is used to describe a shift of topic, it is displayed as a horizontal rule to separate content, it is a self-closing tag -->
+<strong> </strong> it is used to make a text bold
+<u> </u> it is used to underline text
+<em> </em> it is used to italicize text
+<s> </s> it is used to strike through text
+
+
+<img src=”#” alt=”random image”> <!-- the img tag is used to add images to your page, src is an attribute that points to the image’s specific url and alt attribute is the text that displays when the image doesn't load. Img is a self-closing tag -->
+
+<nav> </nav> <!-- the nav tag is used to specify a block of navigation links either within the document or to other documents-->
+
+<video> </video> <!-- The HTML Video element ( <video> ) embeds a media player which supports video playback into the document. You can use <video> for audio content as well, but the <audio> element may provide a more appropriate user experience.  -->
+
+<article> </article> <!-- The <article> tag specifies independent, self-contained content. An article should make sense on its own and it should be possible to distribute it independently from the rest of the site. -->
+
+<a href=”#” target=”_blank”> random text </a> <!-- the a (anchor) tag is used to create links or hyperlinks, href is the attribute that contains the url, # means its a dead link and target is the attribute that specifies where to open the link, _blank means to open it in a new tab -->
+</div>
+<section> </section> <!-- Section tag defines the section of documents such as chapters, headers, footers or any other sections. It is used for grouping thematically related content. The section tag divides the content into section and subsections. The section tag is used when
+requirements of two headers or footers or any other section of documents needed -->
+
+<ul> <!-- the ul tag is used to create an unordered or bullet list -->
+<li> </li> <!-- li tag is the list item tag --> 
+ </ul> 
+
+<ol> <li> </li> </ol> <!-- the ol tag is used to create an ordered list -->
+</body>
+<footer> </footer> <!-- this is what shows at the bottom of your document page, it usually contains copyright or links that sit at the bottom of the page, it is within the body tag -->
+</main>
+
+You can create a text input like this:   <input type="text">
+Placeholder text is what is displayed in your input element before your user has inputted anything. <input type="text" placeholder="this is placeholder text">
+
+You can build web forms that actually submit data to a server using nothing more than pure HTML. You can do this by specifying an action attribute on your form element.
+
+For example:
+
+<form action="/url-where-you-want-to-submit-form-data">
+  <input>
+</form>
+To add a submit button to the form tag, you write <button type="submit">submit</button>
+
+if you wanted to make a text input field required, you can just add the attribute required within your input element, like this: <input type="text" required>
+
+You can use radio buttons for questions where you want the user to only give you one answer out of multiple options.
+
+Radio buttons are a type of input. All related radio buttons should have the same name attribute to create a radio button group.
+Here's an example of a radio button:
+
+<label> 
+  <input type="radio" name="indoor-outdoor">Indoor 
+</label>
+
+It is considered best practice to set a for attribute on the label element, with a value that matches the value of the id attribute of the input element. This allows assistive technologies to create a linked relationship between the label and the related input element. For example:
+
+<input id="indoor" type="radio" name="indoor-outdoor">
+<label for="indoor">Indoor</label>
+
+Checkbox are a type of input. Each of your checkboxes can be nested within its own label element. It is considered best practice to explicitly define the relationship between a checkbox input and its corresponding label by setting the for attribute on the label element to match the id attribute of the associated input element.
+
+Here's an example of a checkbox:
+
+<label for="loving"><input id="loving" type="checkbox" name="personality"> Loving</label>
+
+Each radio button and checkbox should have a value attribute set. If you omit the value attribute, the submitted form data uses the default value, which is on. In this scenario, if the user clicked the "indoor" option and submitted the form, the resulting form data would be indoor-outdoor=on, which is not useful. So the value attribute needs to be set to something to identify the option.
+
+You can set a checkbox or radio button to be checked by default using the checked attribute.
+
+To do this, just add the word checked to the inside of an input element. For example:
+
+<input type="radio" name="test-name" checked>
+
+
+
