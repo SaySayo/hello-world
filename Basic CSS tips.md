@@ -55,25 +55,44 @@ If you set an element's margin to a negative value, the element will grow larger
 
 
 
-You can override class style declaration in subsequent CSS
-You can override class style declaration with ID attributes
-You can override class style declaration with inline styling. 
-You can override every other css style declaration by using !important on a particular class
+- You can override class style declaration in subsequent CSS
+
+- You can override class style declaration with ID attributes
+
+- You can override class style declaration with inline styling. 
+
+
+- You can override every other css style declaration by using !important on a particular class
+
+-------
+
 Hexcodes and rgb() are used to specify colors in css
 :Hover attribute is used to specify what you want when the mouse hovers on a particular element
 Always end your css classes with a semicolon ;
-@keyframes is used to animate a shape or text in css
-hsl() is used to set the hue, saturation and lightness of a color. Hue is from 0 to 360, saturation is from 0% to 100% and lightness is from 0% to 100%
-Z-index tag is used to overlap elements
-Animation-timing-function are used to specify how animation plays out with respect to the duration set. You can use keywords like linear, ease-in, ease-out to specify it or you can used cubic-bezier curves to do so. 
-The Web Content Accessibility Guidelines (WCAG) recommend at least a 4.5 to 1 contrast ratio for normal text.
-Media Queries are a new technique introduced in CSS3 that change the presentation of content based on different viewport sizes, it is specified as @media (max-width: 100px). The viewport is a user's visible area of a web page, and is different depending on the device used to access the site.
+
+- @keyframes is used to animate a shape or text in css
+
+- hsl() is used to set the hue, saturation and lightness of a color. Hue is from 0 to 360, saturation is from 0% to 100% and lightness is from 0% to 100%
+Z-index tag is used to overlap elements. 
+
+- Animation-timing-function are used to specify how animation plays out with respect to the duration set. You can use keywords like linear, ease-in, ease-out to specify it or you can used cubic-bezier curves to do so. 
+
+- The Web Content Accessibility Guidelines (WCAG) recommend at least a 4.5 to 1 contrast ratio for normal text.
+
+
+----
+ 
+### Media Queries are a new technique introduced in CSS3 that change the presentation of content based on different viewport sizes, it is specified as @media (max-width: 100px). The viewport is a user's visible area of a web page, and is different depending on the device used to access the site.
+
 The four different viewport units are:
 
+```
 vw (viewport width): 10vw would be 10% of the viewport's width.
 vh (viewport height): 3vh would be 3% of the viewport's height.
 vmin (viewport minimum): 70vmin would be 70% of the viewport's smaller dimension (height or width).
 vmax (viewport maximum): 100vmax would be 100% of the viewport's bigger dimension (height or width).
+
+```
 
 CSS has a number of different length unit options that you can use.
 The two main types of length units are absolute and relative. Absolute units tie to physical units of length. For example, in and mm refer to inches and millimeters, respectively. Absolute length units approximate the actual measurement on a screen, but there are some differences depending on a screen's resolution.
