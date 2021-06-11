@@ -1,14 +1,22 @@
-BASIC CSS TIPS
+## BASIC CSS TIPS
 
 To pad an element, you can use clockwise direction of of padding {padding-top, padding-right, padding-bottom, and padding-left }, same with margin.
 Font-size and Font-family properties are used to set the specified size and family of a font.
+
 To import a Google Font, you can copy the font's URL from the Google Fonts library and then paste it in your HTML
-To style your html document, you add a style block to the top of the document 
+
+To style your html document, you add a style block to the top of the document '
+
+```
 <style>
 </style> 
+
+```
 The style block contains all the css selectors you’d want to use to style your document, then you apply the class to your html tags
 
 The text-transform property is used to change the appearance of text. It's a convenient way to make sure text on a webpage appears consistently, without having to change the text content of the actual HTML elements.
+
+```
 lowercase	"transform me"
 uppercase	"TRANSFORM ME"
 capitalize	"Transform Me"
@@ -16,14 +24,14 @@ initial	Use the default value
 inherit	Use the text-transform value from the parent element
 none	Default: Use the original text
 
+```
 
 
-
-
-
-CSS borders have properties like style, color and width.
+*CSS borders have properties like style, color and width.*
 
 For example, if we wanted to create a red, 5 pixel border around an HTML element, we could use this class:
+
+```
 
 <style>
   .thin-red-border {
@@ -32,6 +40,8 @@ For example, if we wanted to create a red, 5 pixel border around an HTML element
     border-style: solid;
   }
 </style>
+
+```
 
 We can add rounded borders to a shape or image using the border-radius class
 Width and height are used to size images, shapes and are measured in px(pixels) or em
